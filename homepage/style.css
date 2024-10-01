@@ -1,0 +1,225 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080c1d;
+    font-family: Red Hat Display, sans-serif;
+    color: #ccd6f6;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080c1d;
+    padding: 6px 300px;
+    position: fixed;
+    z-index: 1;
+    min-width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav a:visited, a:link {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+nav a:hover {
+    color: #8a9fff;
+    transition: all ease-out 0.2s;
+}
+
+.menu-direita {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 30px;
+}
+
+.menu-esquerda {
+    display: flex;
+    gap: 40px;
+}
+
+.astronauta {
+    width: 500px;
+    filter: drop-shadow(6px 5px 8px rgba(50, 60, 100, 0.5));
+
+}
+
+.greetings {
+    padding: 250px 460px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    font-size: 30px;
+    
+}
+
+.greetings-text {
+    text-align: left;
+}
+.greetings-text span {
+    color: #8a9fff;
+}
+
+.greetings-text h4 {
+    color: #8892b0;
+    font-weight: 500;
+}
+
+.greetings-text p {
+    font-size: 25px;
+    padding: 15px 0;
+    color:#8892b0;
+}
+
+.greetings h1::after {
+    content: "";
+    width: 5px;
+    height: 40px;
+    background: #ccd6f6;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+    border-radius: 40px;
+}
+
+.greetings h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.introcontato a img{
+    width: 30px;
+}
+
+.introcontato a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 140px;
+        font-size: 25px;
+        border-style: solid;
+        padding: 10px;
+        border-radius: 20px;
+        border-width: 2px;
+}
+
+.introcontato a:hover {
+    background-color: #8a9fff80;
+    animation: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 240px;
+}
+
+.about-description {
+    font-size: 22px;
+    margin: 0;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.about-description ul {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+.about-description p {
+    padding: 50px 0;
+}
+
+.projects {
+    display: flex;
+    padding-top: 190px;
+    padding-bottom: 100px;
+}
+.projects-description {
+    display: flex;
+    max-width: 100vw;
+}
+
+.title-project img {
+    width: 20px;
+    height: 20px;
+}
+
+.title-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 0 10px;
+}
+
+  
+.card {
+    background-color: #1e293b;
+    width: 15%;
+    min-width: 250px;
+    padding: 40px;
+    margin: 7px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: inline-block;
+}
+  
+.card:hover {
+    transform: translateY(-14px); 
+}
+  
+
+.card p {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card-text {
+    display: block;
+    justify-content: center;
+    text-align: left;
+    padding-top: 10px;
+}
+
+
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
